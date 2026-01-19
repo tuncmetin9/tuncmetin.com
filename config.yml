@@ -1,3 +1,4 @@
+
 backend:
   name: git-gateway
   branch: main
@@ -6,11 +7,13 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "homepage"
+    label: "Homepage Content"
     files:
-      - label: "Homepage"
-        name: "homepage"
+      - label: "Main Page"
+        name: "mainpage"
         file: "index.html"
         fields:
-          - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Language Section Title"
+            name: "language"
+            widget: "string"
